@@ -37,6 +37,7 @@ for (const sitio of sitios) {
     const html = readFileSync(join(dist, sitio, 'index.html'), 'utf8')
     assert.match(html, /<a[^>]*class="aviso-muestra"[^>]*href="\.\.\/"/)
     assert.match(html, /Espartanos CSS/)
+    assert.match(html, /<link rel="icon"[^>]*href="[^"]+"/, 'falta el favicón')
   })
 }
 
