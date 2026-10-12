@@ -47,6 +47,7 @@ test('portafolio: enlaza las cinco muestras', () => {
   assert.equal((html.match(/Pide tu cotización/g) ?? []).length >= 1, true)
   for (const precio of ['$5,000', '$12,000', '$18,000', '$20,000']) assert.ok(html.includes(`Desde ${precio} + IVA`), `falta ${precio}`)
   assert.match(html, /Precios aproximados/)
+  assert.match(html, /<link rel="icon"[^>]*href="[^"]+"/, 'falta el favicón')
 })
 
 test('JS del build sin guiones largos visibles', () => {
