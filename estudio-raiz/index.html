@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudio Raíz | Pilates y yoga en Chapalita</title>
+  <meta name="description" content="Estudio Raíz: pilates reformer y yoga en grupos de máximo 8 personas. Sitio de muestra de Espartanos CSS.">
+  <link rel="preload" as="image" href="./img/hero.webp">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <a class="marca" href="#inicio"><small>estudio</small> raíz</a>
+    <nav aria-label="Secciones">
+      <a href="#horario">Horario</a>
+      <a href="#planes">Planes</a>
+      <a href="#instructoras">Instructoras</a>
+    </nav>
+    <a class="boton boton-chico" href="#prueba">Clase de prueba</a>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <img class="hero-img" src="./img/hero.webp" width="2000" height="1333" alt="Mujer haciendo un ejercicio de pilates en un reformer, en un estudio de paredes verdes">
+      <div class="hero-texto">
+        <h1>Pilates y yoga a tu ritmo.</h1>
+        <p>Grupos de máximo 8 personas en Chapalita. Tu primera clase va por nuestra cuenta.</p>
+        <div class="acciones">
+          <a class="boton boton-claro" href="#prueba">Clase de prueba</a>
+          <a class="boton boton-vidrio" href="#horario">Ver horario</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="intro-texto revela">
+        <h2>Un estudio chico, a propósito.</h2>
+        <p>Con ocho lugares por clase, la instructora te corrige la postura a ti, no al grupo. Tenemos ocho reformers, un salón de yoga con luz natural y regaderas.</p>
+        <p>Si vienes por primera vez, llega 15 minutos antes y te enseñamos a usar el equipo con calma.</p>
+      </div>
+      <div class="intro-fotos">
+        <img class="f1 revela" src="./img/reformer.webp" width="1400" height="933" loading="lazy" alt="Mujer estirándose de lado sobre un reformer de pilates">
+        <img class="f2 revela" src="./img/salon.webp" width="1600" height="1067" loading="lazy" alt="Salón de yoga con piso de madera, tapetes alineados y luz de la tarde">
+      </div>
+    </section>
+
+    <section class="horario" id="horario" aria-labelledby="titulo-horario">
+      <img class="olas" src="./img/olas.svg" alt="" aria-hidden="true">
+      <div class="horario-cuerpo">
+        <h2 id="titulo-horario">Horario de clases</h2>
+        <div class="dias" role="tablist" aria-label="Día de la semana" data-dias></div>
+        <ol class="clases" role="tabpanel" aria-live="polite" data-clases></ol>
+        <p class="nota">Reserva hasta 2 horas antes. Puedes cancelar sin costo con 6 horas de anticipación.</p>
+      </div>
+    </section>
+
+    <section class="planes" id="planes" aria-labelledby="titulo-planes">
+      <h2 id="titulo-planes" class="revela">Planes</h2>
+      <div class="planes-cuerpo">
+        <article class="plan-destacado revela">
+          <p class="etiqueta">El más elegido</p>
+          <h3>Ilimitado mensual</h3>
+          <p class="monto">$2,450 <span>al mes</span></p>
+          <ul>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Todas las clases de pilates y yoga</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Reserva con 7 días de anticipación</li>
+            <li><i class="ph ph-check" aria-hidden="true"></i> Congela tu plan hasta 2 semanas</li>
+          </ul>
+          <a class="boton boton-claro" href="#" data-demo="En el sitio real, aquí se abre el pago en línea del plan.">Elegir plan</a>
+        </article>
+        <div class="planes-otros">
+          <article class="plan revela">
+            <h3>Paquete de 8 clases</h3>
+            <p>Vigencia de 6 semanas.</p>
+            <p class="monto">$1,890</p>
+          </article>
+          <article class="plan revela">
+            <h3>Clase suelta</h3>
+            <p>Cualquier clase del horario.</p>
+            <p class="monto">$280</p>
+          </article>
+          <article class="plan plan-prueba revela">
+            <h3>Primera clase</h3>
+            <p>Para que conozcas el estudio sin compromiso.</p>
+            <p class="monto">Gratis</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="instructoras" id="instructoras" aria-labelledby="titulo-instructoras">
+      <img class="instructoras-foto revela" src="./img/pelota.webp" width="1000" height="1500" loading="lazy" alt="Instructora haciendo una zancada con una pelota de pilates">
+      <div>
+        <h2 id="titulo-instructoras" class="revela">Quién te da clase</h2>
+        <dl class="equipo">
+          <div class="revela"><dt>Valeria Ochoa</dt><dd>Pilates reformer. Certificada en pilates clásico, con 9 años dando clase.</dd></div>
+          <div class="revela"><dt>Daniela Ibarra</dt><dd>Yoga. Formación de 500 horas en vinyasa y yin, enfocada en espalda y movilidad.</dd></div>
+          <div class="revela"><dt>Sofía Treviño</dt><dd>Pilates en tapete y rehabilitación. Fisioterapeuta de formación.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="prueba" id="prueba">
+      <img class="prueba-mancha" src="./img/mancha.svg" alt="" aria-hidden="true">
+      <h2>Tu primera clase es gratis.</h2>
+      <p>Escríbenos, elige día y hora, y te apartamos un lugar.</p>
+      <a class="boton" href="#" data-demo="En el sitio real, aquí se abre WhatsApp para apartar tu clase de prueba.">Clase de prueba</a>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div>
+      <p class="marca"><small>estudio</small> raíz</p>
+      <p>Col. Chapalita, Guadalajara, Jalisco</p>
+    </div>
+    <p>Lunes a viernes de 7 am a 9 pm. Sábado de 8:30 am a 1 pm.</p>
+    <p>Estudio Raíz es un negocio ficticio. Sitio de muestra hecho por Espartanos CSS.</p>
+  </footer>
+
+  <a class="aviso-muestra" href="../">Sitio de muestra <span>por Espartanos CSS</span></a>
+</body>
+</html>

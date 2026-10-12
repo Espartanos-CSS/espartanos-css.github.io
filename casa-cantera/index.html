@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Cantera | Bienes raíces en Guadalajara y la costa</title>
+  <meta name="description" content="Casa Cantera: casas y departamentos seleccionados en Guadalajara, Puerto Vallarta y la Riviera Nayarit. Sitio de muestra de Espartanos CSS.">
+  <meta name="theme-color" content="#0f1012">
+  <link rel="preload" as="image" href="./img/hero.webp">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <a class="marca" href="#inicio">Casa Cantera</a>
+    <nav aria-label="Secciones">
+      <a href="#propiedades">Propiedades</a>
+      <a href="#como">Cómo trabajamos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="boton boton-chico" href="#contacto">Agendar visita</a>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-texto">
+        <h1 data-titulo>Casas con carácter en Guadalajara y la costa.</h1>
+        <p data-aparece>Seleccionamos pocas propiedades y las conocemos a fondo. Te acompañamos desde la primera visita hasta la firma.</p>
+        <div class="acciones" data-aparece>
+          <a class="boton" href="#contacto">Agendar visita</a>
+          <a class="enlace" href="#propiedades">Ver propiedades <i class="ph ph-arrow-down-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <figure class="hero-foto" data-hero-foto>
+        <img src="./img/hero.webp" width="1600" height="2400" alt="Terraza con alberca infinita al atardecer, con el cielo en tonos rosa y naranja">
+      </figure>
+    </section>
+
+    <section class="manifiesto" aria-label="Nuestra forma de trabajar">
+      <p data-manifiesto>No vendemos metros cuadrados. Vendemos la luz de la tarde en la terraza, el silencio de la calle y la certeza de que los papeles están en orden.</p>
+    </section>
+
+    <section class="propiedades" id="propiedades" aria-labelledby="titulo-propiedades">
+      <div class="paneo" data-paneo>
+        <div class="pista" data-pista>
+          <div class="propiedades-intro">
+            <h2 id="titulo-propiedades">Propiedades disponibles</h2>
+            <p>Cinco casas y departamentos que visitamos en persona este mes.</p>
+          </div>
+          <!-- Las tarjetas se generan desde logic.js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="interior" aria-labelledby="titulo-interior">
+      <h2 id="titulo-interior">Lo que no sale en el anuncio.</h2>
+      <p>Revisamos instalaciones, escrituras y permisos antes de enseñarte una casa. Si algo no está bien, te lo decimos.</p>
+      <div class="interior-fotos">
+        <img class="i1" data-velocidad="-6" src="./img/pasillo.webp" width="1200" height="1600" loading="lazy" alt="Pasillo de concreto con piso de madera y luz cálida">
+        <img class="i2" data-velocidad="8" src="./img/sala.webp" width="1600" height="1000" loading="lazy" alt="Sala amplia con ventanales de piso a techo">
+        <img class="i3" data-velocidad="-10" src="./img/muro.webp" width="1000" height="1323" loading="lazy" alt="Planta junto a un muro texturizado iluminado por el sol">
+        <img class="i4" data-velocidad="4" src="./img/arco.webp" width="1000" height="1500" loading="lazy" alt="Sala con techo en arco y ventanas geométricas">
+      </div>
+    </section>
+
+    <section class="como" id="como" aria-labelledby="titulo-como">
+      <h2 id="titulo-como">Cómo trabajamos</h2>
+      <ol>
+        <li data-aparece-scroll>
+          <h3>Te escuchamos</h3>
+          <p>Una llamada de 30 minutos para entender qué buscas, cuánto quieres invertir y en qué tiempos.</p>
+        </li>
+        <li data-aparece-scroll>
+          <h3>Visitamos contigo</h3>
+          <p>Te llevamos solo a las casas que cumplen. Sin recorridos de relleno.</p>
+        </li>
+        <li data-aparece-scroll>
+          <h3>Cerramos con notario</h3>
+          <p>Revisión legal, avalúo y firma ante notario. Tú solo apruebas cada paso.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="contacto" id="contacto" aria-labelledby="titulo-contacto">
+      <div>
+        <h2 id="titulo-contacto">Agenda una visita</h2>
+        <p>Te contactamos el mismo día hábil. Atendemos en Guadalajara, Puerto Vallarta y la Riviera Nayarit.</p>
+      </div>
+      <form class="formulario" data-formulario>
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" autocomplete="name" required minlength="3">
+        </div>
+        <div class="campo">
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel" autocomplete="tel" required pattern="[0-9 ()+\-]{10,}">
+        </div>
+        <fieldset class="campo">
+          <legend>Me interesa</legend>
+          <div class="opciones">
+            <label><input type="radio" name="interes" value="comprar" checked> Comprar</label>
+            <label><input type="radio" name="interes" value="vender"> Vender</label>
+            <label><input type="radio" name="interes" value="rentar"> Rentar</label>
+          </div>
+        </fieldset>
+        <div class="campo">
+          <label for="mensaje">¿Qué buscas? <span>Opcional</span></label>
+          <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+        </div>
+        <button class="boton" type="submit">Agendar visita</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p class="marca">Casa Cantera</p>
+    <p>Casa Cantera es un negocio ficticio. Sitio de muestra hecho por Espartanos CSS.</p>
+  </footer>
+
+  <a class="aviso-muestra" href="../">Sitio de muestra <span>por Espartanos CSS</span></a>
+</body>
+</html>
