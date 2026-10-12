@@ -1,0 +1,6 @@
+# Imagen para capturas de pantalla: Chromium de Alpine + playwright-core.
+FROM node:22-alpine
+RUN apk add --no-cache chromium font-noto font-noto-emoji
+WORKDIR /herramientas
+RUN npm init -y >/dev/null && npm i --no-audit --no-fund playwright-core@1.64.0
+ENV NODE_PATH=/herramientas/node_modules CHROMIUM=/usr/bin/chromium

@@ -1,0 +1,46 @@
+schema: spec-driven
+
+context: |
+  Language: es
+  All artifacts must be written in es.
+  Keep OpenSpec structural headings and SHALL/MUST keywords in English.
+
+  Proyecto: sitios web de muestra de Espartanos CSS (Enrique y Moy) para
+  enseñar a clientes potenciales qué podemos construir. Cada sitio es un
+  negocio ficticio y debe decirlo en pantalla. A futuro estos sitios pueden
+  volverse plantillas por giro que un vendedor enseñe sin nosotros.
+
+  Stack: HTML, CSS y JavaScript sin framework, empaquetado con Vite
+  (multipágina). Animación con GSAP y scroll suave con Lenis solo donde la
+  animación comunica algo. Fondos estilo Haikei como SVG. Todo corre en
+  Docker (docker compose run --rm app ...); el host solo tiene git, gh,
+  docker y node para las herramientas de Claude. El CLI de OpenSpec se corre
+  con script/openspec porque el Node del host es 18.
+
+  Reglas de estilo: nada de aspecto "hecho con IA" (gradientes morados,
+  brillos, tarjetas idénticas de tres en tres, Inter por defecto), cero
+  guiones largos en cualquier texto, fotos reales con licencia libre
+  (Unsplash), texto en español de México, móvil primero, y que cargue bien
+  en celulares baratos.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always state what is out of scope
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing

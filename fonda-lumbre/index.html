@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fonda Lumbre | Cocina de leña en Guadalajara</title>
+  <meta name="description" content="Fonda Lumbre: tacos, mole y tortillas hechas a mano en la Col. Americana. Sitio de muestra de Espartanos CSS.">
+  <meta name="theme-color" content="#181513">
+  <link rel="preload" as="image" href="./img/hero.webp">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <a class="marca" href="#inicio">Fonda <b>Lumbre</b></a>
+    <nav aria-label="Secciones">
+      <a href="#menu">Menú</a>
+      <a href="#horario">Horario</a>
+      <a href="#ubicacion">Dónde estamos</a>
+    </nav>
+    <a class="boton boton-chico" href="#" data-demo="En el sitio real, aquí se abre WhatsApp con el pedido listo para enviar."><i class="ph ph-whatsapp-logo" aria-hidden="true"></i> Pedir</a>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-texto">
+        <p class="estado" data-estado><span class="punto" aria-hidden="true"></span><span data-estado-texto>Consultando horario</span></p>
+        <h1>Cocina de leña, tortillas a mano.</h1>
+        <p class="bajada">Comida de fonda en la Col. Americana. Comes aquí o te lo llevamos a tu casa.</p>
+        <div class="acciones">
+          <a class="boton" href="#" data-demo="En el sitio real, aquí se abre WhatsApp con el pedido listo para enviar."><i class="ph ph-whatsapp-logo" aria-hidden="true"></i> Pedir por WhatsApp</a>
+          <a class="boton boton-linea" href="#menu">Ver el menú</a>
+        </div>
+      </div>
+      <figure class="hero-foto">
+        <img src="./img/hero.webp" width="2000" height="1333" alt="Mesa con tacos, salsas, guacamole y una margarita sobre un mantel de talavera">
+      </figure>
+    </section>
+
+    <section class="menu" id="menu" aria-labelledby="titulo-menu">
+      <div class="menu-encabezado">
+        <h2 id="titulo-menu">El menú de hoy</h2>
+        <p>Las tortillas se hacen al momento en comal de barro. Los precios ya incluyen IVA.</p>
+      </div>
+
+      <div class="menu-cuerpo">
+        <div class="menu-listas">
+          <div class="categoria">
+            <h3>Tacos</h3>
+            <ul>
+              <li><span>Al pastor con piña</span><b>$28</b></li>
+              <li><span>Suadero</span><b>$30</b></li>
+              <li><span>Campechano</span><b>$32</b></li>
+              <li><span>Costilla a la leña</span><b>$38</b></li>
+              <li><span>Nopal asado con queso</span><b>$26</b></li>
+            </ul>
+          </div>
+          <div class="categoria">
+            <h3>Platos fuertes</h3>
+            <ul>
+              <li><span>Mole de la casa con pollo</span><b>$185</b></li>
+              <li><span>Enchiladas verdes</span><b>$165</b></li>
+              <li><span>Chile relleno de queso</span><b>$170</b></li>
+              <li><span>Arrachera a la leña</span><b>$245</b></li>
+            </ul>
+          </div>
+          <div class="categoria">
+            <h3>Para empezar</h3>
+            <ul>
+              <li><span>Guacamole en molcajete</span><b>$115</b></li>
+              <li><span>Sopa de tortilla</span><b>$95</b></li>
+              <li><span>Quesadillas de comal (3)</span><b>$105</b></li>
+            </ul>
+          </div>
+          <div class="categoria">
+            <h3>Para tomar</h3>
+            <ul>
+              <li><span>Agua de jamaica o horchata</span><b>$40</b></li>
+              <li><span>Café de olla</span><b>$38</b></li>
+              <li><span>Cerveza nacional</span><b>$55</b></li>
+            </ul>
+          </div>
+        </div>
+        <figure class="menu-foto">
+          <img src="./img/tacos.webp" width="1400" height="909" loading="lazy" alt="Tres tacos de res con cebolla picada y cilantro">
+          <figcaption>Suadero, el más pedido.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="galeria" aria-label="Fotos de la fonda">
+      <img class="g-a" src="./img/mesa.webp" width="1400" height="1400" loading="lazy" alt="Vista desde arriba de una mesa con enchiladas, sopes y salsas">
+      <img class="g-b" src="./img/lumbre.webp" width="1000" height="1333" loading="lazy" alt="Sartén con llamas sobre la estufa">
+      <img class="g-c" src="./img/al-pastor.webp" width="1200" height="1200" loading="lazy" alt="Plato de tacos con chiles toreados y salsa">
+      <img class="g-d" src="./img/salsas.webp" width="1000" height="1500" loading="lazy" alt="Tacos acompañados de salsas y limones">
+      <img class="g-e" src="./img/plato-tacos.webp" width="1200" height="800" loading="lazy" alt="Tabla de madera con tres tacos y un limón">
+    </section>
+
+    <section class="visita" id="horario">
+      <div class="horario">
+        <h2>Horario</h2>
+        <table>
+          <tbody data-horario></tbody>
+        </table>
+        <p class="nota">Cocina abierta hasta 30 minutos antes de cerrar.</p>
+      </div>
+      <div class="ubicacion" id="ubicacion">
+        <img src="./img/comedor.webp" width="1400" height="1050" loading="lazy" alt="Comedor con mesas de madera y pared de ladrillo">
+        <h2>Dónde estamos</h2>
+        <p>Col. Americana, Guadalajara, Jalisco. A dos cuadras de Av. Chapultepec, con estacionamiento en la calle.</p>
+        <a class="boton boton-linea" href="#" data-demo="En el sitio real, aquí se abre Google Maps con la ruta a la fonda."><i class="ph ph-map-pin" aria-hidden="true"></i> Cómo llegar</a>
+      </div>
+    </section>
+
+    <section class="cierre">
+      <h2>¿Se te antojó?</h2>
+      <p>Mándanos tu pedido y en 40 minutos está en tu puerta.</p>
+      <a class="boton" href="#" data-demo="En el sitio real, aquí se abre WhatsApp con el pedido listo para enviar."><i class="ph ph-whatsapp-logo" aria-hidden="true"></i> Pedir por WhatsApp</a>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Fonda Lumbre es un negocio ficticio.</p>
+    <p>Sitio de muestra hecho por Espartanos CSS.</p>
+  </footer>
+
+  <a class="aviso-muestra" href="../">Sitio de muestra <span>por Espartanos CSS</span></a>
+</body>
+</html>

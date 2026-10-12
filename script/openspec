@@ -1,0 +1,5 @@
+#!/bin/sh
+# Corre el CLI de OpenSpec dentro de Docker (el Node del host es 18 y OpenSpec pide 20+).
+cd "$(dirname "$0")/.." || exit 1
+exec docker run --rm -v "$PWD":/w -w /w -u "$(id -u):$(id -g)" -e HOME=/tmp -e npm_config_cache=/tmp/.npm \
+  node:22-alpine npx -y -q @fission-ai/openspec@latest "$@"

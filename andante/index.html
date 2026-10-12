@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mochila Andante | Piel de León, hecha a mano</title>
+  <meta name="description" content="Mochila Andante de 22 litros en piel curtida al vegetal, hecha a mano en León, Guanajuato. Sitio de muestra de Espartanos CSS.">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <p class="barra">Envío gratis a todo México. Llega en 2 a 4 días hábiles.</p>
+  <header class="nav">
+    <a class="marca" href="#inicio">andante</a>
+    <nav aria-label="Secciones">
+      <a href="#detalles">Detalles</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <button class="carrito-boton" type="button" aria-controls="carrito" aria-expanded="false" data-abrir-carrito>
+      <i class="ph ph-handbag" aria-hidden="true"></i>
+      <span class="sr">Carrito,</span>
+      <span class="contador" data-contador>0</span>
+    </button>
+  </header>
+
+  <main id="inicio">
+    <section class="producto">
+      <div class="galeria">
+        <div class="galeria-principal">
+          <img data-foto-principal src="./img/nogal-frente.webp" width="1400" height="2098" alt="Mochila de piel color nogal vista de frente">
+        </div>
+        <div class="miniaturas" data-miniaturas aria-label="Más fotos"></div>
+      </div>
+
+      <div class="compra">
+        <h1>Mochila Andante</h1>
+        <p class="sub">22 litros. Piel curtida al vegetal, hecha a mano en León.</p>
+        <p class="calificacion"><span class="estrellas" aria-hidden="true"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i></span> <a href="#opiniones">126 opiniones</a></p>
+        <p class="precio" data-precio></p>
+
+        <fieldset class="opcion">
+          <legend>Color: <strong data-color-nombre>Nogal</strong></legend>
+          <div class="colores" data-colores></div>
+        </fieldset>
+
+        <div class="opcion">
+          <span class="etiqueta" id="etiqueta-cantidad">Cantidad</span>
+          <div class="cantidad" role="group" aria-labelledby="etiqueta-cantidad">
+            <button type="button" data-menos aria-label="Quitar una"><i class="ph ph-minus" aria-hidden="true"></i></button>
+            <output data-cantidad aria-live="polite">1</output>
+            <button type="button" data-mas aria-label="Agregar una"><i class="ph ph-plus" aria-hidden="true"></i></button>
+          </div>
+        </div>
+
+        <div class="botones">
+          <button class="boton" type="button" data-agregar>Agregar al carrito</button>
+          <a class="boton boton-linea" href="#" data-demo="En el sitio real, aquí se abre WhatsApp con tu pedido y el color elegido."><i class="ph ph-whatsapp-logo" aria-hidden="true"></i> Pedir por WhatsApp</a>
+        </div>
+
+        <ul class="garantias">
+          <li><i class="ph ph-truck" aria-hidden="true"></i> Envío gratis, llega en 2 a 4 días hábiles</li>
+          <li><i class="ph ph-shield-check" aria-hidden="true"></i> 2 años de garantía en costuras y cierres</li>
+          <li><i class="ph ph-arrow-u-up-left" aria-hidden="true"></i> 30 días para cambiarla o devolverla</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="detalles" id="detalles" aria-labelledby="titulo-detalles">
+      <h2 id="titulo-detalles">Hecha para usarse diario.</h2>
+      <div class="specs">
+        <div class="spec spec-grande"><p class="dato">22 L</p><p>Caben una laptop de 15 pulgadas, un suéter y el lunch.</p></div>
+        <div class="spec"><p class="dato">42 × 30 × 14 cm</p><p>Entra como equipaje de mano en cualquier aerolínea.</p></div>
+        <div class="spec"><p class="dato">1.3 kg</p><p>Ligera para ser de piel, con espalda acolchada.</p></div>
+        <div class="spec spec-piel"><img class="spec-mancha" src="./img/mancha.svg" alt="" aria-hidden="true"><p class="dato">Piel al vegetal</p><p>Se curte con taninos de corteza, sin cromo. Se oscurece y se ve mejor con los años.</p></div>
+      </div>
+    </section>
+
+    <section class="dupla">
+      <img src="./img/dupla.webp" width="1800" height="1201" loading="lazy" alt="Dos mochilas de piel, una negra y una color vino, lado a lado">
+      <div class="dupla-texto">
+        <h2>Mismo taller, misma piel.</h2>
+        <p>Cada mochila la corta y la cose una sola persona en nuestro taller de León. Tarda dos días en terminarse.</p>
+      </div>
+    </section>
+
+    <section class="opiniones" id="opiniones" aria-labelledby="titulo-opiniones">
+      <h2 id="titulo-opiniones">Lo que dicen quienes ya la usan</h2>
+      <div class="lista-opiniones">
+        <figure>
+          <p class="estrellas" aria-label="5 de 5 estrellas"><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph-fill ph-star" aria-hidden="true"></i></p>
+          <blockquote>“La uso diario para ir a la oficina en metro. Después de un año la piel se ve mejor que nueva.”</blockquote>
+          <figcaption>Andrea Salgado <span>Color Nogal</span></figcaption>
+        </figure>
+        <figure>
+          <p class="estrellas" aria-label="5 de 5 estrellas"><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph-fill ph-star" aria-hidden="true"></i></p>
+          <blockquote>“Me cabe la laptop y el cargador sin que se deforme. Llegó en tres días a Monterrey.”</blockquote>
+          <figcaption>Héctor Garza <span>Color Vino</span></figcaption>
+        </figure>
+        <figure>
+          <p class="estrellas" aria-label="4 de 5 estrellas"><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph-fill ph-star" aria-hidden="true"></i><i class="ph ph-star" aria-hidden="true"></i></p>
+          <blockquote>“Es pesadita, pero se nota la calidad. La bolsa lateral es perfecta para el termo.”</blockquote>
+          <figcaption>Paola Ruiz <span>Color Nogal</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="preguntas" id="preguntas" aria-labelledby="titulo-preguntas">
+      <h2 id="titulo-preguntas">Preguntas frecuentes</h2>
+      <div class="acordeon">
+        <details>
+          <summary>¿Cómo la cuido?</summary>
+          <p>Límpiala con un trapo seco. Dos veces al año ponle crema para piel incolora. Si se moja, déjala secar a la sombra.</p>
+        </details>
+        <details>
+          <summary>¿Puedo pagar a meses?</summary>
+          <p>Sí, hasta 6 meses sin intereses con tarjetas participantes, o en efectivo en tiendas de conveniencia.</p>
+        </details>
+        <details>
+          <summary>¿La puedo personalizar con mis iniciales?</summary>
+          <p>Sí. Grabamos hasta tres letras en la solapa por $250 adicionales; tarda un día más en salir.</p>
+        </details>
+        <details>
+          <summary>¿Qué cubre la garantía?</summary>
+          <p>Costuras, cierres y herrajes durante 2 años. Si algo falla, la reparamos o la cambiamos sin costo.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p class="marca">andante</p>
+    <p>Andante es una marca ficticia. Sitio de muestra hecho por Espartanos CSS.</p>
+  </footer>
+
+  <div class="velo" data-velo hidden></div>
+  <aside class="carrito" id="carrito" aria-label="Tu carrito" data-carrito hidden>
+    <div class="carrito-cabeza">
+      <h2>Tu carrito</h2>
+      <button type="button" class="cerrar" data-cerrar-carrito aria-label="Cerrar carrito"><i class="ph ph-x" aria-hidden="true"></i></button>
+    </div>
+    <div class="carrito-lista" data-carrito-lista></div>
+    <div class="carrito-pie" data-carrito-pie></div>
+  </aside>
+
+  <a class="aviso-muestra" href="../">Sitio de muestra <span>por Espartanos CSS</span></a>
+</body>
+</html>
