@@ -11,7 +11,9 @@ const nombres = ['', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sáb
 const cortos = ['', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb']
 const dias = document.querySelector('[data-dias]')
 const lista = document.querySelector('[data-clases]')
-const hoy = new Date().getDay()
+// El día que cuenta es el de Guadalajara, no el de quien visita.
+const ahora = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Mexico_City' }))
+const hoy = ahora.getDay()
 
 dias.innerHTML = [1, 2, 3, 4, 5, 6]
   .map((d) => `<button type="button" role="tab" data-dia="${d}" aria-label="${nombres[d]}">${cortos[d]}${d === hoy ? '<small>hoy</small>' : ''}</button>`)
@@ -42,7 +44,7 @@ dias.addEventListener('keydown', (e) => {
   siguiente.focus()
   mostrar(Number(siguiente.dataset.dia))
 })
-mostrar(diaInicial())
+mostrar(diaInicial(ahora))
 
 // Revelado suave al entrar en pantalla
 const elementos = document.querySelectorAll('.revela')

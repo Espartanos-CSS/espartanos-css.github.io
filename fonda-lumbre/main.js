@@ -7,12 +7,14 @@ import '../shared/muestra.js'
 import './style.css'
 import { HORARIO, estadoFonda, formatoHora } from './logic.js'
 
-const estado = estadoFonda()
+// La hora que cuenta es la de Guadalajara, no la de quien visita.
+const ahora = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Mexico_City' }))
+const estado = estadoFonda(ahora)
 document.querySelector('[data-estado]').classList.toggle('abierta', estado.abierta)
 document.querySelector('[data-estado-texto]').textContent = estado.texto
 
 const dias = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
-const hoy = new Date().getDay()
+const hoy = ahora.getDay()
 document.querySelector('[data-horario]').innerHTML = [1, 2, 3, 4, 5, 6, 0]
   .map((d) => {
     const h = HORARIO[d]
