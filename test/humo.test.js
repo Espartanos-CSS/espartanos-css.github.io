@@ -45,6 +45,8 @@ test('portafolio: enlaza las cinco muestras', () => {
   const html = readFileSync(join(dist, 'index.html'), 'utf8')
   for (const sitio of sitios) assert.match(html, new RegExp(`href="\\./${sitio}/"`), `falta ${sitio}`)
   assert.equal((html.match(/Pide tu cotización/g) ?? []).length >= 1, true)
+  for (const precio of ['$5,000', '$12,000', '$18,000', '$20,000']) assert.ok(html.includes(`Desde ${precio} + IVA`), `falta ${precio}`)
+  assert.match(html, /Precios aproximados/)
 })
 
 test('JS del build sin guiones largos visibles', () => {

@@ -82,6 +82,8 @@ a { color: inherit; }
 .niveles dt { font-size: 24px; font-weight: 800; letter-spacing: -0.03em; }
 .niveles dd { margin: 0; color: var(--suave); max-width: 60ch; }
 .niveles dd strong { display: block; color: var(--texto); font-weight: 600; margin-bottom: 2px; }
+.desde { display: block; margin-top: 6px; font-size: 15px; font-weight: 600; letter-spacing: 0; color: var(--rojo); }
+.nota-precios { margin: 24px 0 0; color: var(--suave); font-size: 15px; max-width: 60ch; }
 @media (max-width: 640px) { .niveles dl div { grid-template-columns: 1fr; gap: 6px; } }
 
 /* Cómo cobramos */
