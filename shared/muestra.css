@@ -43,3 +43,9 @@
 @media (prefers-reduced-motion: reduce) {
   .aviso-muestra, .aviso-demo { transition: none; }
 }
+
+/* En celular el aviso se reduce para tapar lo menos posible. */
+@media (max-width: 600px) {
+  .aviso-muestra { right: 8px; bottom: 8px; padding: 5px 10px; font-size: 11px; opacity: 0.92; }
+  .aviso-muestra span { display: none; }
+}

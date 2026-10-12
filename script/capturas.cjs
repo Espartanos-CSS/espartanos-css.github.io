@@ -16,7 +16,8 @@ const servidor = http.createServer((req, res) => {
 })
 
 const paginas = process.argv.slice(2).length ? process.argv.slice(2) : ['', 'fonda-lumbre', 'dental-alba', 'estudio-raiz', 'casa-cantera', 'andante']
-const tamanos = { cel: { width: 390, height: 844 }, esc: { width: 1440, height: 900 } }
+const todos = { cel: { width: 390, height: 844 }, cel360: { width: 360, height: 740 }, esc: { width: 1440, height: 900 } }
+const tamanos = Object.fromEntries((process.env.TAMANOS || 'cel,esc').split(',').map((t) => [t, todos[t]]))
 const salida = path.resolve(__dirname, '..', 'capturas')
 
 servidor.listen(4321, async () => {

@@ -108,7 +108,7 @@ button { font: inherit; color: inherit; }
 @media (max-width: 860px) {
   .producto { grid-template-columns: 1fr; }
   .galeria { position: static; grid-template-columns: 1fr; }
-  .galeria-principal { grid-column: 1; }
+  .galeria-principal { grid-column: 1; aspect-ratio: 1 / 1; }
   .miniaturas { grid-column: 1; grid-row: 2; grid-template-columns: repeat(3, 72px); }
 }
 
